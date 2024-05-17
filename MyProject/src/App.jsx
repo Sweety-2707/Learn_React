@@ -21,7 +21,7 @@ function App() {
   return (
     <>
       <h1>Time Counter</h1>
-      <h3> Counter Value : {count}</h3>
+      <h3 className="text-3xl font-bold underline"> Counter Value : {count}</h3>
       <button id="plus" onClick={onPlus}>Add Value</button>
       <button id="minus" onClick={onMinus}>Minus Value</button>
       <footer>Counter limit between 0 and 20 </footer>
