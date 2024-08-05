@@ -9,7 +9,7 @@ import Layout from './componenets/Layout.jsx'
 import About from './componenets/About/About.jsx'
 import Contact from './componenets/Contact/Contact.jsx'
 import Users from './componenets/Users/Users.jsx'
-import Github from './componenets/Github/Github.jsx'
+import Github, { GitHubInfo } from './componenets/Github/Github.jsx'
 
 // const router =createBrowserRouter([
 //   {
@@ -39,7 +39,7 @@ const router = createBrowserRouter(
        <Route path="/about" element={<About/>}/>
        <Route path="/contact" element={<Contact/>}/>
        <Route path="/users/:user" element={<Users/>}/>
-       <Route path="/github" element={<Github/>}/>
+       <Route loader={GitHubInfo} path="/github" element={<Github/>}/>
     </Route>
   )
 )
