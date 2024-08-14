@@ -5,7 +5,7 @@ export default function Card() {
     <div className="w-4/12 items-center bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
       <a href="/">
         <img
-          className="p-8 rounded-t-lg"
+          className="p-8 rounded-t-lg h-64"
           src="https://m.media-amazon.com/images/I/61fTrWJX5JL._AC_UF1000,1000_QL80_.jpg"
           alt="product_image1"
         />
