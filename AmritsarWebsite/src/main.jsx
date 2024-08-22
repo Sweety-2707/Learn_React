@@ -10,6 +10,8 @@ import Food from './componenets/Food/Food.jsx'
 import Travel from './componenets/Travel/Travel.jsx'
 import Places from './componenets/Places/Places.jsx'
 import Hotel from './componenets/Hotel/Hotel.jsx'
+import SingUp from './componenets/SignUp/SingUp.jsx'
+import Login from './componenets/Login/Login.jsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -19,6 +21,8 @@ const router = createBrowserRouter(
        <Route path="/travel" element={<Travel/>}/>
        <Route path="/hotel" element={<Hotel/>}/>
        <Route path="/places" element={<Places/>}/>
+       <Route path="/signup" element={<SingUp/>}/>
+       <Route path="/login" element={<Login/>}/>
     </Route>
   )
 )
