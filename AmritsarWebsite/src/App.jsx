@@ -1,12 +1,16 @@
 import { useState } from 'react'
 import './App.css'
+import {connection} from '../connection'
+
 
 function App() {
-  const [count, setCount] = useState(0)
+
+  connection().then(() =>
+    console.log("mongoDB Connected!")
+  );
 
   return (
     <>
-      <h1 className='bg-red-300 '>Hello World</h1>
     </>
   )
 }
